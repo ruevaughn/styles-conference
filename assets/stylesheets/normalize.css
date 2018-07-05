@@ -339,3 +339,16 @@ template {
 [hidden] {
   display: none;
 }
+
+/* Fix so <tt>, <code> and <pre> tags get normal text size also in
+   some versions of Firefox, Safari, Konqueror, Chrome etc. */
+tt, code, pre {
+    font-family: monospace, sans-serif;
+}
+
+/* Fix so <source> tags, and .css and .js pages, get normal text size
+   also in some versions of Firefox, Safari, Konqueror, Chrome etc. */
+div.mw-geshi div,
+pre {
+  font-family: monospace, sans-serif !important;
+}
